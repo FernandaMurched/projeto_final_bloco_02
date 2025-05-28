@@ -33,9 +33,9 @@ public class Categoria {
     @NotBlank(message = "É obrigatório preencher o atributo classificação!")
     private String classificacao; // Ex: "Livre", "10+", "18+"
 	
-	/*@OneToMany(fetch = FetchType.LAZY, mappedBy = "categoria", cascade = CascadeType.REMOVE)
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "categoria", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("categoria")
-	private List<Produto> produto;*/
+	private List<Produto> produtos;
 	
 
 	public Long getId() {
@@ -62,12 +62,12 @@ public class Categoria {
 		this.classificacao = classificacao;
 	}
 
-	/*public List<Produto> getProduto() {
-		return produto;
+	public List<Produto> getProdutos() {
+		return produtos;
 	}
 
-	public void setProduto(List<Produto> produto) {
-		this.produto = produto;
-	}*/
+	public void setProdutos(List<Produto> produtos) {
+		this.produtos = produtos;
+	}
 	
 }
