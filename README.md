@@ -120,29 +120,48 @@ A API utiliza autenticação com **JWT**. Após o login, é necessário adiciona
         "id": 3
     }
 }
+```
 
-📁 Estrutura das Rotas da API
-/usuarios
+---
+
+## 📁 Estrutura das Rotas da API
+
+- /usuarios
 POST /cadastrar
 POST /logar
-/produtos
+
+- /produtos
 GET /todos
 POST /novo
 PUT /atualizar
 DELETE /{id}
-/categorias
+
+- /categorias
 GET /todas
 POST /nova
 PUT /atualizar
 DELETE /{id}
-📚 Documentação da API
+
+---
+
+##📚 Documentação da API
+
 A documentação completa e interativa da API, gerada automaticamente com Swagger/OpenAPI, pode ser acessada através do link abaixo:
 
-🔗 Acessar Documentação da API (Swagger UI)
+🔗 Acessar Documentação da API [Swagger UI](https://projetofarmacia-w93b.onrender.com/)
 
 Nela, você encontrará detalhes sobre todos os endpoints, modelos de dados (DTOs), parâmetros de requisição, exemplos de respostas e poderá testar a API diretamente pelo navegador.
 
-👩‍💻 Autora
+Para fazer login na aplicação utilize os seguintes dados: 
+
+```json
+        {
+            "usuario": "root@email.com",
+            "senha": "rootroot"
+        }
+```
+
+## 👩‍💻 Autora
 Fernanda Murched
 Desenvolvedora Java FullStack
 
